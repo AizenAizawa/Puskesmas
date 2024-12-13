@@ -1,0 +1,37 @@
+@keyframes buttonClickAnimation {
+    0% {
+      transform: scale(1);
+      background-color: #28a745;
+    }
+    50% {
+      transform: scale(0.95);
+      background-color: #218838;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #28a745;
+    }
+  }
+  
+  .btn-animated {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .btn-animated:active {
+    animation: buttonClickAnimation 0.3s ease;
+  }
+
+  .spinner-border {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-width: 0.2em;
+}
+
+.btn-submit.loading .btn-text {
+    visibility: hidden;
+}
+
+.btn-submit.loading .btn-spinner {
+    display: inline-block;
+}
